@@ -981,9 +981,9 @@ textarea {
 }
 
 .form-button {  
-    display: flex;  
-    align-items: center;
     text-align: center;
-    justify-content: center;
+    margin-right: 163px;
+    margin-left: 165px;
+
     cursor: pointer;
 }
