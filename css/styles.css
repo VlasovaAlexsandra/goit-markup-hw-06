@@ -647,19 +647,22 @@ img {
 
 /* footer */
 .footer {
-    /* display: flex; */
+    display: flex;
     background-color: var(--bgr-footer);
     padding-top: 60px;
     padding-bottom: 60px;   
 }
 
 .footer .address-logo {
-    width: 250px;
+    width: 230px;
+    padding: 0;
     margin-right: 70px;
+    font-size: 14px;
 }
 
 .common {
     display: block;   
+    padding: 0;
 }
 
 .common-title {
@@ -741,6 +744,8 @@ img {
     padding-left: 15px;
 }
 
+
+
 /* модалка  */
 
 .backdrop {
@@ -792,4 +797,37 @@ img {
 .button-close:hover,
 .button-close:focus {
     border: none;
+}
+
+.form-section {
+    margin-left: 93px;
+}
+
+.form-footer {
+    display: flex;
+    /* width: 570px; */
+    /* outline: 1px solid tomato; */
+}
+
+.form-field {   
+    display: flex;
+    margin-right: 12px;
+    /* outline: 1px solid green; */
+
+}
+
+.form-field input {
+    width: 358px;    
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    background-color: transparent;
+    padding-left: 12px;
+}
+
+.footer-button {
+    display: flex;
+}
+
+.form-field-icon {
+    margin-left: 10px;
 }
