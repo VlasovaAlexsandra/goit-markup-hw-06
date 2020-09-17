@@ -338,7 +338,7 @@
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">        
             <div class="button-close" data-modal-close>
-                <svg class="" width="30px" height="30x">
+                <svg class="button-close-icon" width="30px" height="30x">
                     <use href="./images/icons/symbol-defs.close.svg#icon-close"></use>
                 </svg>                
             </div>
@@ -375,15 +375,15 @@
                 <div class="form-modal-field">
                     <label class="form-label" for="comment">Комментарий</label>
                     <textarea class="form-textarea" name="comment" id="comment" rows="7" placeholder="Введите текст"></textarea>
-                </div>
+                </div>        
+                    
+                <label class="checkbox-label" for="checkbox"> 
+                    <input type="checkbox" class="checkbox visually-hidden" name="policy" id="checkbox">
+                    <span class="checkbox-text" > Соглашаюсь с рассылкой и принимаю </span>
+                    <a href="" class="checkbox-label-link">Условия договора</a> 
+                </label>
 
-                <!-- <div class="form-modal-field"> -->
-                    <input type="checkbox" name="policy" id="policy">
-                    <label class="form-label" for="policy">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a> </label>
-                <!-- </div> -->
-
-                <button type="button" class="button primary footer-button">Отправить
-                </button>
+                <button type="button" class="button primary form-button">Отправить</button>
 
 
 
