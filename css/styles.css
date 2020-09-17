@@ -775,8 +775,6 @@ img {
 
     background: #FFFFFF;      
     border-radius: 4px; 
-
-
 }
 
 
@@ -862,11 +860,25 @@ textarea {
     
 }
 
+.form-label {  
+    font-size: 12px;
+    line-height: 14px;   
+
+    letter-spacing: 0.01em;
+
+    color: #757575;
+}
+
 .form-modal-field input {
     margin: 0;
     padding: 12px 40px;
-    border: 1px solid rgba(33, 33, 33, 0.2);;
+    border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+}
+
+.form-modal-field input:focus {
+    outline-color: var(--accent-text-color);
+    transition: outline-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-modal-field label {
@@ -884,19 +896,49 @@ textarea {
     border-radius: 4px;
 }
 
-.form-modal-field::placeholder {
-    color: rgba(117, 117, 117, 0.5);   
+.form-modal-field textarea:focus {
+    outline-color: var(--accent-text-color);
+    transition: outline-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* .textarea::placeholder {  
+    font-size: 8px;
+    line-height: 8px;
+    letter-spacing: 0.01em;
+
+    color: rgba(117, 117, 117, 0.5);   
+} */
+
+.form-textarea::placeholder {
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+
+    color: rgba(117, 117, 117, 0.5);
+}
 
 .form-modal-field {
     position: relative;
 } 
 
-.form-modal-icon {
+.form-modal-icon {    
     position: absolute;
     /* display: inline-block; */
     margin: 11px 12px;
-
+    padding: 0;
 }
 
+
+/* .form-modal-field:focus .form-modal-icon,
+.form-modal-field:hover .form-modal-icon {
+    outline-color: var(--accent-text-color);
+    fill: var(--accent-text-color);
+} */
+
+
+.form-field-input:not(:placeholder-shown):focus:valid ~ .form-modal-icon {
+    outline-color: var(--accent-text-color);
+    fill: var(--accent-text-color);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    /* transition: outline-color 2s cubic-bezier(0.4, 0, 0.2, 1); */
+}
